@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:ci": "npm test -- --coverage",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
-    "test:verbose": "jest --passWithNoTests --runInBand"
+    "test:verbose": "jest --passWithNoTests --runInBand",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +29,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "git-commit-msg-linter": "^3.2.8",
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "jest": "^27.2.3",
     "lint-staged": "^11.1.2",
     "ts-jest": "^27.0.5",
